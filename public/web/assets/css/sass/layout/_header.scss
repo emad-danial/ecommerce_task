@@ -1,0 +1,80 @@
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    height: to-rem(155px);
+    background: linear-gradient(180deg, rgba(55, 50, 93, 0.55) 0%, rgba(48, 45, 76, 0.41) 55.44%, rgba(31, 31, 31, 0.00) 100%);
+    z-index: 999;
+    @media (max-width: 768px) {
+        position: relative;
+        height: auto;
+    }
+    .navbar {
+        @media (max-width: 768px) {
+            -webkit-box-shadow: 0px 2px 4px 1px rgb(29 21 89);
+            -moz-box-shadow: 0px 2px 4px 1px rgb(29 21 89);
+            box-shadow: 0px 2px 4px 1px rgb(29 21 89);
+        }
+        &-collapse {
+            margin: auto;
+            max-width: max-content;
+        }
+        .nav {
+            &-link {
+                color: $white !important;
+                font-family: var(--avenir);
+                font-size: to-rem(16px);
+                display: flex;
+                align-items: center;
+                letter-spacing: to-rem(0.3px);
+                margin-#{$right}: to-rem(24px);
+                .icon-login {
+                    margin-#{$left}: to-rem(5px);
+                    font-size: to-rem(20px);
+                }
+            }
+        }
+        &-right {
+            display: flex;
+            align-items: center;
+            a {
+                span {
+                    margin-#{$right}: to-rem(24px);
+                    color: #fff;
+                    font-size: to-rem(22px);
+                }
+            }
+        }
+    }
+    .sticky-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $dark-blue;
+        z-index: 999;
+    }
+    @media (max-width: 768px) {
+        nav.responsive {
+            background-color: $dark-blue;
+            .navbar-brand {
+                width: 80%;
+                img {
+                    max-width: 37% !important;
+                }
+            }
+            .navbar-right {
+                display: none;
+            }
+            .navbar-collapse {
+                margin: to-rem(20px) 0 0 to-rem(10px);
+            }
+        }
+        .navbar-toggler {
+            border-color: $white !important;
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+}

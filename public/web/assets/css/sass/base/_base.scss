@@ -1,0 +1,86 @@
+// Base
+html {
+  font-family: var(--regular-font);
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: var(--regular-font);
+}
+input {
+  &:hover, &:active, &:focus {
+    box-shadow: none !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 75% !important;
+  }
+}
+.sec-title {
+  color: $dark;
+  font-size: to-rem(24px);
+  font-family: var(--mont-semi-bold);
+  @media (max-width: 768px) {
+    margin-bottom: to-rem(20px);
+  }
+}
+.mt-50 {
+  margin-top: to-rem(50px) !important;
+}
+.mt-60 {
+  margin-top: to-rem(60px) !important;
+}
+.mb-12 {
+  margin-bottom: to-rem(12px) !important;
+}
+.mb-43 {
+  margin-bottom: to-rem(43px) !important;
+}
+.mb-70 {
+  margin-bottom: to-rem(70px) !important;
+}
+.title {
+  font-family: var(--mont-semi-bold);
+  color: $dark-blue;
+  font-size: to-rem(24px);
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+.title-sm {
+  font-family: var(--mont-regular);
+  font-size: to-rem(14px);
+  color: $dark;
+}
+.about {
+  .rectangle {
+    position: absolute;
+    bottom: to-rem(73px);
+    width: 100%;
+  }
+}
+.pricing {
+  .rectangle {
+    position: absolute;
+    bottom: to-rem(280px);
+    width: 100%;
+  }
+}
+.asterisk {
+  color: red;
+  font-size: to-rem(15px);
+}

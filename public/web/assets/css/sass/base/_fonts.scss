@@ -1,0 +1,81 @@
+$font-path: "../fonts" !default;
+
+// English Fonts
+$avenir-font: Avenir !default;
+$archivo-black-font: ArchivoBlack-Regular !default;
+$mont-regular-font: Mont-Regular !default;
+$mont-bold-font: Mont-Bold !default;
+$mont-semi-bold-font: Mont-SemiBold !default;
+$bein-normal-font: bein-normal !default;
+$bein-black-font: bein-black !default;
+
+// Fallback Font
+$fallback-font: "sans-serif" !default;
+
+// Arabic Fonts
+// $regular-font: "sans-serif";
+// $bold-font: cairoBold;
+// $semi-bold-font: cairoSemiBold;
+// $medium-font: cairoMedium;
+// $lang-font: interRegular;
+
+
+:root {
+    --avenir: #{$avenir-font} , #{$fallback-font};
+    --archivo: #{$archivo-black-font} , #{$fallback-font};
+    --mont-regular: #{$mont-regular-font} , #{$fallback-font};
+    --mont-semi-bold: #{$mont-semi-bold-font} , #{$fallback-font};
+    --mont-bold: #{$mont-bold-font} , #{$fallback-font};
+    --bein-normal: #{$bein-normal-font} , #{$fallback-font};
+    --bein-black: #{$bein-black-font} , #{$fallback-font};
+}
+
+@font-face {
+    font-family: #{$avenir-font};
+    src: url("#{$font-path}/#{$avenir-font}.ttc");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: #{$archivo-black-font};
+    src: url("#{$font-path}/#{$archivo-black-font}.ttf");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: #{$mont-regular-font};
+    src: url("#{$font-path}/#{$mont-regular-font}.ttf");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: #{$mont-semi-bold-font};
+    src: url("#{$font-path}/#{$mont-semi-bold-font}.ttf");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: #{$mont-bold-font};
+    src: url("#{$font-path}/#{$mont-bold-font}.ttf");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: #{$bein-normal-font};
+    src: url("#{$font-path}/#{$bein-normal-font}}.ttf");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: #{$bein-black-font};
+    src: url("#{$font-path}/#{$bein-black-font}.ttf");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,42 @@
+%bold-font {
+    font-family: var(--bold-font); 
+}
+%box-shadow-none {
+    @include prefixer(box-shadow, unset !important, webkit moz o ms);
+}
+%box-shadow {
+    @include prefixer(box-shadow, 0 3px 6px  rgba($color: $dark, $alpha: 0.16), webkit moz o ms);
+}
+%box-shadow-listing {
+    @include prefixer(box-shadow, 0 5px 18px  rgba($color: $dark, $alpha: 0.15), webkit moz o ms);
+}
+%image {
+    @extend %object-fit-cover;
+    @extend %object-position-top;
+    width:100% !important;
+}
+%object-fit-cover {
+    object-fit: cover;
+}
+%object-position-center {
+    object-position: center;
+}
+%object-position-top {
+    object-position: top;
+}
+%img-effect {
+    @include prefixer(transition,all 1s cubic-bezier(0,0,.44,1.18),webkit moz o ms);
+    @include prefixer(transform,scale(1),webkit moz o ms);
+}
+%img-effect-hover {
+   @include prefixer(transform,scale(1.08),webkit moz o ms);   
+}
+%scaleX {
+    @include prefixer(transform,scaleX(-1),webkit moz o ms);
+}
+%transition {
+    @include prefixer(transition,all 0.3s ease-in-out,webkit moz o ms)
+}
+%transition-md {
+    @include prefixer(transition,all 0.5s ease-in-out,webkit moz o ms)
+}

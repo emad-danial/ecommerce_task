@@ -1,0 +1,67 @@
+.btn-primary {
+    border-radius: to-rem(50px);
+    font-size: to-rem(16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-transform: capitalize;
+    &.default {
+        background-color: $secondary-color;
+        color: $white;
+        font-family: var(--avenir);
+        &:hover, &:active, &:focus {
+            background-color: $dark-blue;
+        }
+    }
+    &.gray {
+        background-color: $light-d-dray;
+        color: $dark-gray;
+        font-family: var(--mont-regular);
+        &:hover, &:active, &:focus {
+            background-color: $dark-blue;
+            color: $white;
+        }
+    }
+    &.blue {
+        background-color: $dark-blue;
+        color: $white;
+        font-family: var(--mont-bold);
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 0;
+        &:hover, &:active, &:focus {
+            background-color: $secondary-color;
+        }
+    }
+    &.pricing-btn {
+        height: to-rem(42px);
+        width: 90%;
+        margin: auto;
+        margin-bottom: to-rem(18px);
+        &.blue-bg {
+            background-color: $light-blue;
+        }
+        &.green-bg {
+            background-color: $green;
+        }
+        &.yellow-bg {
+            background-color: $yellow;
+        }
+        &.orange-bg {
+            background-color: $orange;
+        }
+    }
+    &.lg {
+        width: to-rem(259px);
+        height: to-rem(44px);
+    }
+    &.sm {
+        width: to-rem(114px);
+        height: to-rem(38px);
+    }
+    &.full {
+        width: 100%;
+        height: to-rem(50px);
+    }
+}

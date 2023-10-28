@@ -1,0 +1,2 @@
+<img src="<?php echo e(is_null($src) ?  '/Admin/assets/media/users/default.jpg' : $src); ?>" width="<?php echo e($width ?? '50px'); ?>" height="<?php echo e($height ?? '50px'); ?>" alt="">
+<?php /**PATH C:\Users\Emad\Desktop\New folder (6)\resources\views/admin/components/inputs/tags/img.blade.php ENDPATH**/ ?>

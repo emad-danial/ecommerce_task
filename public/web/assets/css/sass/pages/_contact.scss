@@ -1,0 +1,44 @@
+.contact {
+    h2 {
+        color: $dark;
+        font-family: var(--bein-black);
+        margin-bottom: to-rem(30px);
+        font-size: to-rem(54px);
+    }
+    .instruction {
+        color: $dark;
+        font-family: var(--bein-normal);
+        margin-bottom: to-rem(40px);
+        line-height: to-rem(24px);
+    }
+    .contact-info {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: to-rem(55px);
+        margin-bottom: to-rem(25px);
+        .item {
+            display: flex;
+            align-items: center;
+            span {
+                margin-#{$right}: to-rem(15px);
+                font-size: to-rem(23px);
+            }
+            &:not(:last-child) {
+                margin-#{$right}: to-rem(53px);
+            }
+            &:last-child {
+                margin-#{$right}: to-rem(23px);
+            }
+        }
+        .title {
+            font-size: to-rem(13px);
+            font-family: var(--mont-bold);
+            color: $dark;
+        }
+        .text {
+            font-size: to-rem(13px);
+            font-family: var(--mont-regular);
+            color: $dark;
+        }
+    }
+}

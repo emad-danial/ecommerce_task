@@ -1,0 +1,22 @@
+.input-group {
+    position: relative;
+    input {
+        border: 1px solid #E0E0E0;
+        height: to-rem(50px);
+        padding: to-rem(12px) to-rem(20px);
+        font-size: to-rem(14px);
+        font-family: var(--mont-regular);
+        color: #828282;
+        border-radius: 0;
+        &.auth {
+            border-radius: to-rem(8px);
+            background: #F0EFFF;
+            border: 0;
+            font-size: to-rem(14px);
+            height: to-rem(62px);
+            &::placeholder {
+                color: #A7A3FF;
+            }
+        }
+    }
+}

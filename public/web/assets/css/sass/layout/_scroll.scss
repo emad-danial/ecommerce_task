@@ -1,0 +1,53 @@
+/*-- scroll design --*/
+/*-- Chrome && Edge && Safari --*/
+// ::-webkit-scrollbar-track {
+//     background-color: $light-e-gray;
+//     @extend %box-shadow-none;
+// }
+// ::-webkit-scrollbar {
+//     width: 8px;
+//     height:8px;
+//     background-color:$light-e-gray;
+// } 
+// ::-webkit-scrollbar-thumb {
+//     background-color:var(--color-secondary);
+//     @extend %transition;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//     background-color:var(--color-primary);
+// }
+// ::-webkit-scrollbar-track,
+// ::-webkit-scrollbar-thumb {
+//     border-radius: 8px;
+// }
+// :root{
+//     scrollbar-width: thin !important;
+//     scrollbar-color: var(--color-secondary) $white !important;
+// }
+// .table-responsive{
+//     scrollbar-width: thin !important;
+
+//     scrollbar-color: var(--color-primary-dark) $white !important;
+//     &::-webkit-scrollbar-thumb {
+//       background-color:var(--color-primary-dark);
+//     }
+//     &::-webkit-scrollbar-thumb:hover {
+//       background-color:var(--color-secondary);
+//     }
+// }
+// .nav-tabs-list{
+//     scrollbar-width: thin !important;
+//     scrollbar-color:var(--color-light-c-gray)  $light-d-gray !important;
+    
+//     &::-webkit-scrollbar,
+//     &::-webkit-scrollbar-track{
+//         background-color:$light-d-gray;
+//     }
+//     &::-webkit-scrollbar-thumb {
+//       background-color:var(--color-light-c-gray);
+//     }
+//     &::-webkit-scrollbar-thumb:hover {
+//       background-color:var(--color-light-b-gray);
+//     }
+// }
+

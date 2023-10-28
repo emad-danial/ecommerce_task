@@ -1,0 +1,53 @@
+.authentication {
+    display: flex;
+    .left {
+        width: 50%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        .auth-area {
+            width: 60%;
+            margin: auto;
+            @media (max-width: 768px) {
+                width: 85%;
+            }
+            h2 {
+                text-align: $left;
+                color: $dark;
+                font-family: var(--mont-semi-bold);
+                font-size: to-rem(32px);
+                margin-top: to-rem(75px);
+                margin-bottom: to-rem(22px);
+            }
+            .link {
+                a {
+                    font-size: to-rem(13px);
+                    color: #B0B0B0;
+                }
+                &.forgot {
+                    text-align: $right;
+                    margin-bottom: to-rem(46px);
+                    a {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                &.create {
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        width: 50%;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        img {
+            height: 100%;
+        }
+    }
+}

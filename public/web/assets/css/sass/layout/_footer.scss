@@ -1,0 +1,73 @@
+footer {
+    padding: to-rem(24px);
+    background-color: $light-dark;
+    .content-wrapper {
+        display: flex;
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+        .left {
+            width: 19%;
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+        .right {
+            width: 81%;
+            @media (max-width: 768px) {
+                text-align: center;
+                width: 100%;
+            }
+            .nav {
+                padding: 0;
+            }
+            h5 {
+                color: $gray-secondary;
+                font-family: var(--avenir);
+                font-size: to-rem(16px);
+                margin-bottom: to-rem(23px);
+                text-transform: capitalize;
+            }
+            .nav {
+                @media (max-width: 768px) {
+                    align-items: center;
+                    margin-bottom: to-rem(50px);
+                }
+                &-item {
+                    a {
+                        color: $white;
+                        font-size: to-rem(14px);
+                        font-family: var(--bein-normal);
+                        margin-bottom: to-rem(30px);
+                        display: flex;
+                        align-items: center;
+                        .icon {
+                            margin-#{$right}: to-rem(8px);
+                            &::before {
+                                font-size: to-rem(20px);
+                                color: $gray-secondary;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            hr {
+                border-color: $soft-light-gray;
+                width: 80%;
+                margin: to-rem(32px) auto;
+            }
+            .copyright {
+                p {
+                    color: $white;
+                    font-size: to-rem(16px);
+                    font-family: var(--mont-regular);
+                }
+            }
+        }
+    }
+}

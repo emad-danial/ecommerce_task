@@ -1,0 +1,18 @@
+@if variable-exists(dir) {
+    @if $dir != ltr and $dir != rtl {
+      $dir: ltr;
+    }
+}
+@function is-En($value1, $value2: null) {
+    @if $dir != rtl {
+        @return $value1;
+    } 
+    @else {
+      @return $value2;
+    }
+}
+@function is-Ar($value1, $value2: null) {
+    @return is-En($value2, $value1);
+}
+$left: is-En(left, right);
+$right: is-En(right, left);

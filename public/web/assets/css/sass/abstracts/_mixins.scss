@@ -1,0 +1,107 @@
+@mixin is-En {
+    @if $dir != rtl {
+        @content;
+    }
+}
+
+@mixin is-Ar {
+    @if $dir == rtl {
+        @content;
+    }
+}
+
+@mixin line-clamp($lines-to-show) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+}
+
+@mixin truncate($line-height, $lines-to-show) {
+    display: block;
+    display: -webkit-box;
+    max-height: $line-height*$lines-to-show + rem;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin truncatePlus($line-height, $lines-to-show) {
+    display: block;
+    display: -webkit-box;
+    min-height: $line-height*$lines-to-show + rem;
+    max-height: $line-height*$lines-to-show + rem;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ @mixin trim($width,$display: inline-block ) {
+    max-width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: $display;
+}
+
+@mixin background($size: unset,$position: 0 0,$repeat: no-repeat) {
+    background: {
+        size: $size;
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+@mixin prefixer($property,$value,$prefix:()){
+    #{$property}:#{$value};
+    @each $prefixs in $prefix{
+        #{'-'+ $prefixs +'-' + $property}: $value;
+    }
+}
+
+@mixin fadeOut($name: "fadeOut", $duration: .5s, $timing-function: ease-in) {
+    animation: #{$name} #{$duration} #{$timing-function};
+    -webkit-animation: #{$name} #{$duration} #{$timing-function};
+    @keyframes #{$name} {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+@mixin fadeIn($name: "fadeIn", $duration: .5s, $timing-function: ease-in){
+    animation: #{$name} #{$duration} #{$timing-function};
+    -webkit-animation: #{$name} #{$duration} #{$timing-function};
+    @keyframes #{$name} {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin keyframe($animatename) {
+    @-webkit-keyframes #{$animatename} {
+        @content;
+    }
+    @-moz-keyframes #{$animatename} {
+        @content;
+    }
+    @keyframes #{$animatename} {
+        @content;
+    }
+}

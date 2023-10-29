@@ -423,7 +423,7 @@
                 formData.append('name', proname);
                 formData.append('barcode', barcode);
                 formData.append('code', procode);
-                let path = base_url + "/getAllproducts";
+                let path = base_url + "/api/getAllproducts";
                 // console.log("path", path);
                 $.ajax({
                     url: path,
@@ -444,7 +444,7 @@
                                 for (let ii = 0; ii < response.data.length; ii++) {
                                     let proObj = response.data[ii];
                                     $("#productsSearchContainer").append(
-                                        '<div class="col-md-4"><div class="card"> <img class="card-img-top  " src="'+base_url+'/'+ proObj['image'] + '" " alt="image"> <div class="card-body"> <h5 class="product-title">' + proObj['name_ar'] +
+                                        '<div class="col-md-4"><div class="card"> <img class="card-img-top  " src="'+base_url+ proObj['image'] + '" " alt="image"> <div class="card-body"> <h5 class="product-title">' + proObj['name_ar'] +
                                         '</h5><h6> السعر : ' + proObj['price'] + '</h6>  <h6>' + 'الكمية &nbsp; <input type="number" min="1" value="1" class="border border-primary rounded text-center w-50" id="product' + proObj['id'] + '"> </h6>' +
                                         ' <br> <button type="button" class="btn btn-primary addToCartButton" onclick="addToCartFunction(this)" id="' + proObj['id'] + '" product_name="' + proObj['name_ar'] + '" product_flag="' + proObj['flag'] + '" product_price="' + proObj['price'] + '" product_image="' + proObj['image'] + '" >' +
                                         'إضافة الى السلة </button> </div> </div> </div>'

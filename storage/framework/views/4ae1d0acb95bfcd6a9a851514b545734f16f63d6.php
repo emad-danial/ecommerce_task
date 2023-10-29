@@ -1,2 +1,0 @@
-<span class="<?php echo $class ?? ''; ?>"  <?php echo $free_content ?? ''; ?>><?php echo $content; ?></span>
-<?php /**PATH C:\Users\Emad\Desktop\New folder (6)\resources\views/admin/components/inputs/tags/span.blade.php ENDPATH**/ ?>

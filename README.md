@@ -27,3 +27,7 @@ go to url
 http://localhost:8000/adminPanel
 email:super-admin@admin.com
 password:147147
+
+add 2 API url
+http://localhost:8000/api/getCategoryChildAndHisProducts/1
+http://localhost:8000/api/getAllShopProducts
